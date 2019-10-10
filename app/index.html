@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang='en' ng-app="eventApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Event Registration</title>
+        <base href = "/">
+        <link stylesheet = './css/styles.css'>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    </head>
+    <body>
+
+        <div class = "header">
+            <button class = "button" ><a class = "aref" href="/newEvent/0">GENERATE</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/1">1</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/2">2</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/3">3</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/4">4</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/5">5</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/6">6</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/7">7</a></button>
+            <button class = "button" ><a class = "aref" href="/newEvent/8">8</a></button>
+        </div>
+
+        <ng-view></ng-view>
+
+        <script src="/js/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="/js/vendor/underscore/underscore-min.js"></script>
+        <script src="/js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/js/vendor/angular/angular.js"></script>
+        <script src="/app.js"></script> 
+        <script src="/js/vendor/angular-route/angular-route.js"></script>
+        <script src="/js/vendor/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
+
+        <!--CONTROLLERS-->
+        <script src="/js/controllers/EventController.js"></script>
+        <script src="/js/controllers/ScopedController.js"></script>
+
+        <!--SERVICES-->
+        <script src="./js/services/EventService.js"></script>
+
+        <!--DIRECTIVES-->
+        <script src="./js/directives/blockKeysDirective.js"></script>
+        <script src="./js/directives/EventDirective.js"></script>
+        <script src="./js/directives/ScopedDirective.js"></script>
+    </body>
+</html>
+

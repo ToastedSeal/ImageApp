@@ -1,0 +1,126 @@
+.button {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(66, 114, 116);
+    border: none;
+    color: white
+}
+
+.button:hover {
+    background-color: rgba(87, 168, 141, 0.836);
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(66, 114, 116);
+}
+
+.aref {
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.childPage {
+    padding: 2%;
+    margin: auto;
+    width:80%;
+}
+
+.allImages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imageContainer {
+    float: left;
+    width: 50%;
+}
+
+.pWrapper {
+    margin-left: 5%;
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1%;
+    box-sizing: border-box;
+    display:inline-block;
+}
+.pWrapper p {
+    clear:both;
+    float:left;
+}
+
+
+.pWrapper p::first-letter {
+    text-transform: uppercase;
+}
+
+.image {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40%;
+    display:block;
+    float:right;
+}
+
+.imageSet {
+    margin-top: 20px;
+}
+
+.genButtons button {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-color: rgb(66, 114, 116);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-size: 30px;
+}
+
+.genButtons {
+    text-align: center;
+}
+
+.calcContainer {
+    margin:auto;
+    display: inline-block;
+    width:100%;
+}
+
+.wholeCalc {
+    margin:auto;
+    width: 50%;
+    height: auto;
+    font-family: sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2%;
+}
+
+.calcInput {
+    width: 60%;
+}
+
+.calcButton {
+    width: 30%;
+}
+
+.calc {
+    padding:2%;
+    margin:auto;
+    width:80%;
+    display: table;
+}
+
+a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}

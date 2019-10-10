@@ -1,0 +1,13 @@
+<div class = "childPage">
+    <p class="genButtons"><button ng-click="addImage()">+</button><button ng-click="removeImage()">-</button> </p>
+    <div class = "allImages">
+        <div class = "imageContainer" ng-repeat = "image in imageContainer">
+            <div class = "imageSet">
+                <div class = "pWrapper">
+                    <owner-label></owner-label>
+                </div>
+                <img class = "image" ng-src="{{getUrl(image.owner.name)}}">
+            </div>
+        </div>
+    </div>
+</div>

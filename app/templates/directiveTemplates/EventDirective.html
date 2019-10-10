@@ -1,0 +1,4 @@
+<p class="imageText" ng-repeat ="(key,value) in image.owner">
+    <label for="{{value+key}}">{{key}}:</label>
+    <input id = "{{value+key}}" ng-model="image.owner[key]">
+</p>
