@@ -1,126 +1,127 @@
-.button {
-    width: 10%;
-    height: 100%;
-    background-color: rgb(66, 114, 116);
-    border: none;
-    color: white
-}
-
-.button:hover {
-    background-color: rgba(87, 168, 141, 0.836);
-    text-decoration: underline;
-}
-
-.header {
-    width: 100%;
-    height: 60px;
-    background-color: rgb(66, 114, 116);
-}
-
-.aref {
-    display: block;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.childPage {
-    padding: 2%;
-    margin: auto;
-    width:80%;
-}
-
-.allImages:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.imageContainer {
-    float: left;
-    width: 50%;
-}
-
-.pWrapper {
-    margin-left: 5%;
+.nav-button {
     width: auto;
-    height: auto;
+    height: 100%;
+    margin-left: 1%;
     font-family: sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1%;
-    box-sizing: border-box;
+    background-color: none;
+    background: none;
+    border: none;
     display:inline-block;
-}
-.pWrapper p {
-    clear:both;
-    float:left;
-}
-
-
-.pWrapper p::first-letter {
-    text-transform: uppercase;
-}
-
-.image {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 40%;
-    display:block;
-    float:right;
-}
-
-.imageSet {
-    margin-top: 20px;
-}
-
-.genButtons button {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    background-color: rgb(66, 114, 116);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-    font-size: 30px;
-}
-
-.genButtons {
-    text-align: center;
-}
-
-.calcContainer {
-    margin:auto;
-    display: inline-block;
-    width:100%;
-}
-
-.wholeCalc {
-    margin:auto;
-    width: 50%;
-    height: auto;
-    font-family: sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 2%;
-}
-
-.calcInput {
-    width: 60%;
-}
-
-.calcButton {
-    width: 30%;
-}
-
-.calc {
-    padding:2%;
-    margin:auto;
-    width:80%;
-    display: table;
 }
 
 a {
-    font-weight: 700;
     color: white;
     text-decoration: none;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner {
+    height: 10vh;
+    background-color: rgba(82, 82, 82, 0.63);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.primary-image-container {
+    height: 70vh;
+    width:100%;
+    display:block;
+    margin:auto;
+    background-color: rgba(172, 172, 172, 0.651);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.primary-image-holder {
+    height: 98%;
+    width:auto;
+    display: inline-block;
+    position: relative;
+
+}
+
+.primary-image {
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:block;
+}
+
+.image-label {
+    height: 65vh;
+    width:auto;
+    padding:1%;
+    margin:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    z-index: 1000;
+    position: absolute;
+    margin-left: 1%;
+    font-family: sans-serif;
+    background-color: rgba(82, 82, 82, 0.63);
+}
+.button-holder {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    bottom: 50%;
+    right: 1%;
+}
+
+.button {
+    height:60px;
+    width:60px;
+    border-radius: 100%;
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.39);
+    font-size: 100%;
+}
+
+.show-button {
+    position: absolute;
+    top: 1%;
+    left:1%;
+}
+
+.right-button {
+    float: right;
+}
+
+.left-button {
+    float: left;
+}
+
+.secondary-image-container {
+    height: 20vh;
+    width:100%;
+    background-color: rgba(82, 82, 82, 0.63);
+    display: block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.secondary-image-holder {
+    margin-top: 5vh;
+    height:10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: auto;
+    margin-right:1%;
+    display: inline-block
+}
+
+.secondary-image {
+    height:100%
+}
+
+
+body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
 }

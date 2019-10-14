@@ -27,6 +27,11 @@ eventApp.controller('EventController', ['$scope', 'eventService', '$routeParams'
             return `https://picsum.photos/600.jpg?${name}`
         }
 
+        $scope.goRight = function() {
+           $scope.imageContainer.shift()
+           $scope.addImage();
+        }
+
         function init() {
             for(let i = 0; i < $routeParams.eventId; i++) {
                 $scope.addImage();

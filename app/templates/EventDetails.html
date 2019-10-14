@@ -1,13 +1,27 @@
-<div class = "childPage">
-    <p class="genButtons"><button ng-click="addImage()">+</button><button ng-click="removeImage()">-</button> </p>
+<div class = "child-page">
+    <div class = "banner">
+        <button class = "nav-button" ><a class = "aref" href="/testScoping">Calculator</a></button>
+        <button class = "nav-button" ><a class = "aref" href="/testScoping">Placeholder Option 1</a></button>
+        <button class = "nav-button" ><a class = "aref" href="/testScoping">Placeholder Option 2</a></button>
+        <button class = "nav-button" ><a class = "aref" href="/testScoping">Placeholder Option 3</a></button>
+    </div>
     <div class = "allImages">
-        <div class = "imageContainer" ng-repeat = "image in imageContainer">
-            <div class = "imageSet">
-                <div class = "pWrapper">
-                    <owner-label></owner-label>
-                </div>
-                <img class = "image" ng-src="{{getUrl(image.owner.name)}}">
+        <div class="primary-image-container">
+            <div ng-show="show" class="image-label">
+                <owner-label></owner-label>
             </div>
+            <div class="primary-image-holder">
+                <img class = "primary-image" ng-src="{{getUrl(imageContainer[0].owner.name)}}">
+                <button class= "show-button button" ng-click="show=!show">{{show ? '-' : '+'}}</button>
+                <div class = "button-holder">
+                    <button class = "right-button button" ng-click="goRight()">></button>
+                </div>
+            </div>
+        </div>
+        <div class = "secondary-image-container">
+                <div class = "secondary-image-holder"  ng-repeat = "image in imageContainer">
+                    <img class = "secondary-image" ng-src="{{getUrl(image.owner.name)}}">
+                </div>
         </div>
     </div>
 </div>
