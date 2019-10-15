@@ -11,7 +11,7 @@
                 <owner-label></owner-label>
             </div>
             <div class="primary-image-holder">
-                <img class = "primary-image" ng-src="{{getUrl(imageContainer[0].owner.name)}}">
+                <img class = "primary-image" ng-src="{{imageContainer[0].download_url}}">
                 <button class= "show-button button" ng-click="show=!show">{{show ? '-' : '+'}}</button>
                 <div class = "button-holder">
                     <button class = "right-button button" ng-click="goRight()">></button>
@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class = "secondary-image-container">
-                <div class = "secondary-image-holder"  ng-repeat = "image in imageContainer">
-                    <img class = "secondary-image" ng-src="{{getUrl(image.owner.name)}}">
+                <div class = "secondary-image-holder"  ng-repeat = "image in imageContainer  | limitTo:10">
+                    <img class = "secondary-image" ng-src="{{image.download_url}}">
                 </div>
         </div>
     </div>
