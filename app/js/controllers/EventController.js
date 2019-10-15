@@ -19,12 +19,12 @@ eventApp.controller('EventController', ['$scope', 'eventService', '$routeParams'
         $scope.initList = function(num) {
             eventService.getImageList(num).then((response) => {
                 $scope.imageContainer = response.data;
-                console.log('IMAGECONT: ', $scope.imageContainer[0])
             });
         }
 
         $scope.addToList = function(num) {
             eventService.getImageList(num).then((response) => {
+                console.log('reponse: ', response.data)
                 response.data.forEach(element => {
                     $scope.imageContainer.push(element);
                 });
@@ -37,7 +37,7 @@ eventApp.controller('EventController', ['$scope', 'eventService', '$routeParams'
             if((pos % 8) === 0) {
                 $scope.addToList(8)
              }
-            $scope.imageContainer.shift()
+            $scope.imageContainer.shift();
          }
  
 

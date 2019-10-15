@@ -1,5 +1,6 @@
 eventApp.factory('eventService', ['$http', function($http) {
 
+    page = 0;
     /**
      * Returns an HttpPromise to a random user generator api
      */
@@ -8,7 +9,8 @@ eventApp.factory('eventService', ['$http', function($http) {
     }
 
     function getImageList(num) {
-        return $http.get(`https://picsum.photos/v2/list?page=2&limit=${num}`);
+        page++;
+        return $http.get(`https://picsum.photos/v2/list?page=${page}&limit=${num}`);
     }
 
     return {
