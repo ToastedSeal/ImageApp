@@ -1,6 +1,7 @@
 <div class = "childPage">
-    <div ng-repeat = "line in fields">
-        <div class = "wholeCalc">
+    <div class = "wholeCalc">
+        <div><p class="calc-label">Value: {{finalVal}}</p></div>
+        <div ng-repeat = "line in fields">
             <line-calc-directive class = "calcContainer" value="value" calc="resolveExpr(value)"  line="line" ></line-calc-directive>
         </div>
     </div>

@@ -151,6 +151,47 @@ a {
     width: 100%;
 }
 
+.calc {
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.wholeCalc {
+    background-color: rgba(172, 172, 172, 0.301);
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    overflow: auto;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.calc-label {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:rgb(77, 75, 75);
+    font-size: 30px;
+
+}
+
+.calc-button {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(138, 138, 209);
+    border: none;
+    color: white;
+    
+}
+
+.calc-input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0; 
     height: 100%; 
